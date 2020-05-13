@@ -3,6 +3,9 @@ A simple clone of google calendar client using svelte, date-fns. Using sapper fo
 
 For date parsing, using [Date-fns](https://date-fns.org/)
 
+The status of the projects is updated here 
+[App Status](https://quirky-boyd-6d97f4.netlify.app/)
+
 ### To do components 
 1. Side nav calender
 2. Main calender 
@@ -23,3 +26,5 @@ https://svelte.dev/examples
 
 https://bestguy.github.io/sveltestrap/?path=/story/introduction--get-started
 https://sapper.svelte.dev/docs#Pages
+
+Netlify is cool!
