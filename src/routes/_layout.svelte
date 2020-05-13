@@ -1,22 +1,14 @@
 <script>
 	import Nav from '../components/Nav.svelte';
-
-	export let segment;
+	import SideNav from '../components/SideNav.svelte'
 </script>
 
-<style>
-	main {
-		position: relative;
-		max-width: 56em;
-		background-color: white;
-		padding: 2em;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-</style>
-
-<Nav {segment}/>
-
-<main>
-	<slot></slot>
-</main>
+<div class="main-app c-flex c-flex-column full-height">
+	<Nav />
+	<div class="c-flex full-height">
+		<SideNav />
+		<div class="c-flex-full-height">
+			<slot></slot>
+		</div>
+	</div>
+</div>

@@ -1,55 +1,75 @@
+<div class="g-top-navigation">
+    <header>
+        <div class="logo-menu-bar-holder">
+            <div class="menu-bar">
+                <Menu size='24px' /> 
+            </div>            
+            <div class="logo-holder">
+                <img src="svelte-google-calendar-logo.png" class="img-responsive" alt="svelte google calendar logo" />
+            </div>
+            <div class="logo-name">
+                <h5>Calendar</h5>
+            </div>
+        </div>
+    </header>
+</div>
+
 <script>
-	export let segment;
+    import Menu from "svelte-material-icons/Menu.svelte";
 </script>
 
 <style>
-	nav {
-		border-bottom: 1px solid rgba(255,62,0,0.1);
-		font-weight: 300;
-		padding: 0 1em;
-	}
+    .g-top-navigation {
+        flex: 0 0 64px;
+        border-bottom: 1px solid #dadce0;
+        padding: 8px 16px;
+    }
 
-	ul {
-		margin: 0;
-		padding: 0;
-	}
+    .g-top-navigation header {
+        width: 100%;
+    }
 
-	/* clearfix */
-	ul::after {
-		content: '';
-		display: block;
-		clear: both;
-	}
+    .logo-menu-bar-holder {
+        display: inline-block;
+        vertical-align: top;
+    }
 
-	li {
-		display: block;
-		float: left;
-	}
+    .menu-bar {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        text-align: center;
+        padding: 12px;
+        cursor: pointer;
+        user-select: none;
+        display: inline-block;
+        vertical-align: top;
+    }
 
-	[aria-current] {
-		position: relative;
-		display: inline-block;
-	}
+    .menu-bar:hover {
+        background-color: #f0f0f0;
+    }
 
-	[aria-current]::after {
-		position: absolute;
-		content: '';
-		width: calc(100% - 1em);
-		height: 2px;
-		background-color: rgb(255,62,0);
-		display: block;
-		bottom: -1px;
-	}
+    .logo-holder {
+        display: inline-block;
+        vertical-align: top;    
+        width: 44px;
+        margin-top: 2px;    
+    }
 
-	a {
-		text-decoration: none;
-		padding: 1em 0.5em;
-		display: block;
-	}
+    .logo-name {
+        display: inline-block;
+        vertical-align: top;    
+    }
+
+    .logo-name h5 {
+        margin: 0;
+        font-weight: 400;
+        color: #5f6368;
+        padding-left: 4px;
+        font-size: 24px;
+        line-height: 24px;
+        padding-top: 13px;
+    }
+
 </style>
-
-<nav>
-	<ul>
-		<li><a aria-current='{segment === undefined ? "page" : undefined}' href='.'>home</a></li>
-	</ul>
-</nav>
