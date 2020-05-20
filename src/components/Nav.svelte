@@ -1,4 +1,4 @@
-<div class="g-top-navigation">
+<div class="c-flex g-top-navigation">
     <header>
         <div class="logo-menu-bar-holder">
             <div class="menu-bar">
@@ -16,6 +16,7 @@
 
 <script>
     import Menu from "svelte-material-icons/Menu.svelte";
+    export let segment;
 </script>
 
 <style>

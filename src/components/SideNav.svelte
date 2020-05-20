@@ -12,5 +12,6 @@
     .g-side-navigation {
         flex: 0 0 256px;
         padding: 8px;
+        border-right: 1px solid #dadce0;
     }
 </style>

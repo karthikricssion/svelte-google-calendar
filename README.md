@@ -21,4 +21,7 @@ https://svelte.dev/examples \
 https://bestguy.github.io/sveltestrap/?path=/story/introduction--get-started \
 https://sapper.svelte.dev/docs#Pages 
 
+Awesome Svelte Resoures \
+https://github.com/ryanatkn/awesome-svelte-resources
+
 Netlify is cool!
