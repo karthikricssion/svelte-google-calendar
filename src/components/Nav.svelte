@@ -47,6 +47,10 @@
         vertical-align: top;
     }
 
+    .menu-bar :global(svg)  {
+        vertical-align: top;
+    }
+
     .menu-bar:hover {
         background-color: #f0f0f0;
     }
